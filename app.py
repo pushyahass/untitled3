@@ -49,7 +49,7 @@ def upload():
 
 @app.route("/search", methods=['POST'])
 def search():
-    cur.execute("SELECT picture FROM people WHERE name=peoplename")
+    cur.execute("SELECT picture FROM people WHERE name='Nora'")
     image = cur.fetchall()
     image = image[0][0]
     print(image[0][0])
